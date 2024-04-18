@@ -9,7 +9,7 @@ os.chdir('/app')
 from utils import *
 
 VIDEO_PATH = "/Drive/DATACENTER_HDD/AICCTV_VIDEO"
-DB_SETTING_PATH = "/app/DB.json"
+DB_SETTING_PATH = "/app/setting/DB.json"
 st.set_page_config(layout="wide")
 
 """
