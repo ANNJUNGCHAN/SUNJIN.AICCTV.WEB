@@ -30,7 +30,7 @@ conn = pymysql.connect(host= host,
                     charset='utf8')
 
 cur = conn.cursor()
-query = "SELECT * FROM AICCTVDB"
+query = "SELECT * FROM AICCTV_DB_DEAD"
 cur.execute(query)
 
 conn.commit()
@@ -58,6 +58,7 @@ try :
 
     path = TIME_to_VideoPath(Farm,House,COUNTER, START_TIME, END_TIME)
     final_path = os.path.join(VIDEO_PATH, path + ".avi")
+    st.text(final_path)
 
     if os.path.exists(final_path):
         # Streamlit의 다운로드 버튼을 사용하여 파일 제공
